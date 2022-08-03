@@ -41,6 +41,9 @@
     box-shadow: 0 3px 0 0 hsl(171deg 66% 38%),
                 0 5px 10px 0 hsl(171deg 66% 38% / 80%);
 }
+.app:first-of-type:hover {
+    background-color: hsl(171, 66%, 48%);
+}
 @media (min-width: 992px) {
     /* .global-heading {
         margin-bottom: 80px;
@@ -62,6 +65,9 @@
     box-shadow: 0 3px 0 0 hsl(233deg 100% 64%), 
                 0 5px 10px 0 hsl(233deg 100% 64% / 80%);
 } 
+.app:last-of-type:hover {
+    background-color: hsl(233, 100%, 73%);
+}
 /* End Components */
 /* Start Global Rules */
 * {
