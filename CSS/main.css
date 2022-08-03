@@ -1,0 +1,291 @@
+/* Start Variables */
+:root {
+--PrimaryStrong-Cyan: hsl(171, 66%, 44%);
+--Primary-Light-Blue: hsl(233, 100%, 69%);
+--Neutral-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Neutral-Grayish-Blue: hsl(201, 11%, 66%);
+}
+/* End Variables */
+/* Start Components */
+.global-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.global-heading h1,
+.global-heading h2,
+.global-heading h3 {
+    color: var(--Neutral-Dark-Grayish-Blue);
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.global-heading p {
+    color: var(--Neutral-Grayish-Blue);
+    line-height: 1.7;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app {
+    display: block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.app:first-of-type {
+    background-color: var(--PrimaryStrong-Cyan);
+    margin-bottom: 20px;
+    box-shadow: 0 3px 0 0 hsl(171deg 66% 38%),
+                0 5px 10px 0 hsl(171deg 66% 38% / 80%);
+}
+@media (min-width: 992px) {
+    /* .global-heading {
+        margin-bottom: 80px;
+    } */
+    .app {
+        width: fit-content;
+    }
+    .app:first-of-type {
+        margin: 0;
+    }
+    .download {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+.app:last-of-type {
+    background-color: var(--Primary-Light-Blue);
+    box-shadow: 0 3px 0 0 hsl(233deg 100% 64%), 
+                0 5px 10px 0 hsl(233deg 100% 64% / 80%);
+} 
+/* End Components */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+
+/* Start Header */
+body {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    margin: 0;
+}
+@media (min-width: 992px) {
+    body {
+        background-image: url(../images/bg-header-desktop.png);
+    }
+}
+header {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+header .logo {
+    width: 150px;
+    margin-bottom: 50px;
+}
+/* End Header */
+/* Start Snippets */
+main .snippets {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+main .snippets > div:last-child img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+main .snippets > div:last-child div:last-child h3 {
+    color: var(--Neutral-Dark-Grayish-Blue);
+}
+main .snippets > div:last-child div:last-child p {
+    color: var(--Neutral-Grayish-Blue);
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+    main .snippets {
+        padding: 0;
+    }
+    main .snippets > div:last-child {
+        display: flex;
+        gap: 80px;
+    }
+    main .snippets > div:last-child .pic {
+        flex: 1.5;
+    }
+    main .snippets > div:last-child div:last-child {
+        flex: 1;
+        margin-right: 200px;
+        margin-top: 40px;
+        text-align: start;
+    }
+}
+/* End Snippets */
+/* Start Clipboard */
+.clipboard {
+    padding-top: 80px;
+}
+.clipboard img {
+    width: 100%;
+}
+@media (min-width: 929px) {
+    .clipboard .pic {
+        text-align: center;
+    }
+    .clipboard img {
+        width: unset;
+    }
+}
+/* End Clipboard */
+/* Start Workflow */
+.workflow .container {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.workflow .container > div:last-child div {
+    margin-top: 50px;
+}
+@media (min-width: 992px) {
+    .workflow .container > div:last-child {
+        display: flex;
+        gap: 30px;
+    }
+}
+.workflow .container > div:last-child h3 {
+    color: var(--Neutral-Dark-Grayish-Blue);
+}
+.workflow .container > div:last-child p {
+    color: var(--Neutral-Grayish-Blue);
+    line-height: 1.7;
+}
+/* End Workflow */
+/* Start Brands */
+.brands {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.brands .container img {
+    display: block;
+    margin: 0px auto 65px
+}
+.brands .container img:last-child {
+    margin-bottom: 0;
+}
+@media (min-width: 992px) {
+    .brands .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brands .container img {
+        margin: 0;
+    }
+}
+/* End Brands */
+/* Start Download */
+.download-apps {
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+/* End Download */
+/* Start Footer */
+footer {
+    background-color: #f5f6f8;
+}
+footer .container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+footer .container .logo {
+    width: 60px;
+}
+footer .container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+footer .container ul li {
+    margin-bottom: 20px;
+}
+footer .container ul li a {
+    text-decoration: none;
+    color: var(--Neutral-Dark-Grayish-Blue);
+}
+footer .container .social {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+footer .container .social a:nth-child(2) img  {
+    margin: 0 25px;
+}
+footer .attribution {
+    padding: 40px 0;
+    background-color: var(--Neutral-Dark-Grayish-Blue);
+    color: white;
+}
+@media (min-width: 992px) {
+    footer .container {
+        display: flex;
+        align-items: center;
+    }
+    footer .container > img {
+        margin-right: 100px;
+    }
+    footer .container ul {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .container ul > li {
+        width: calc(100% / 3);
+    }
+    footer .container ul li:not(:first-child, :nth-child(2), :nth-child(3)) {
+        margin: 0;
+    }
+    footer .container .social {
+        padding: 0;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+/* End Footer */
